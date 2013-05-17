@@ -94,6 +94,9 @@ class Get_vimeo_thumb {
 	        	case "large":
 	        		$variables['vimeo_thumb_url'] = (string) $data->video->thumbnail_large;
 	        		break;
+                default:
+                    $this->EE->TMPL->log_item( '&nbsp;&nbsp;***&nbsp;&nbsp;Get Vimeo Thumb Debug: No size parameter specified' );
+                    break;
 	        }
 
 	        return $this->EE->TMPL->parse_variables_row($this->EE->TMPL->tagdata, $variables);
