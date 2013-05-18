@@ -17,9 +17,9 @@ The Vimeo video id.
 The thumbnail size you wish to get.
 
 ## refresh = [int]
-The number of days to cache the XML data retrieved from Vimeo.
+The number of days to cache the XML data retrieved from Vimeo. Optional, default is 7.
 
 # Installation & Config
-Copy pi.get_vimeo_thumb.php to your ExpressionEngine third-party addons directory. There exists one config variable that you may set:
+Create a get_vimeo_thumb directory in your ExpressionEngine third-party addons directory and place pi.get_vimeo_thumb.php in this directory. There exists one config variable that you may set:
 
     $config['get_vimeo_thumb_cache_path'] = 'your custom cache path';
