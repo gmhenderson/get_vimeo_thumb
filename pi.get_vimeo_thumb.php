@@ -48,7 +48,7 @@ class Get_vimeo_thumb {
     	//print_r($this->EE->config->config['get_vimeo_thumb']);
     	$size = $this->EE->TMPL->fetch_param('size','small');
         $id = $this->EE->TMPL->fetch_param('id');
-        $refresh = $this->EE->TMPL->fetch_param('refresh') ? $this->EE->TMPL->fetch_param('refresh') : 7;
+        $refresh = $this->EE->TMPL->fetch_param('refresh','7');
 
         if ($id == "")
         {
